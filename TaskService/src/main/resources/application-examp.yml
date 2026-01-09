@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydatabase   # URL вашей БД
+    username: myuser                                  # имя пользователя БД
+    password: mypassword                              # пароль
+    driver-class-name: org.postgresql.Driver          # драйвер
+  jpa:
+    hibernate:
+      ddl-auto: update                                 # update, create, validate, none
+    show-sql: true                                     # вывод SQL в консоль
+    properties:
+      hibernate:
+        format_sql: true
