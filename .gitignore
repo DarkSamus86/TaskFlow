@@ -44,3 +44,6 @@ bin/
 
 #project
 application-dev.yml
+data_source_mapping.xml
+dataSources.xml
+db-forest-config.xml
