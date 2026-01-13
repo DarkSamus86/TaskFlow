@@ -1,5 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectId" id="37EOv9nDybFguowxm5ldPeTN4x1" />
-  <component name="PropertiesComponent">{}</component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6ba576c6-6068-4b18-9c05-ca40d018ce97" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/db-forest-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TaskService/src/main/java/org/darksamus86/taskservice/controllers/web/TaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TaskService/src/main/java/org/darksamus86/taskservice/domain/PostTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TaskService/src/main/java/org/darksamus86/taskservice/domain/repository/PostTaskRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TaskService/src/main/java/org/darksamus86/taskservice/infrastructure/persistence/entities/tables/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TaskService/src/main/java/org/darksamus86/taskservice/infrastructure/persistence/entities/tables/TaskHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TaskService/src/main/java/org/darksamus86/taskservice/infrastructure/persistence/entities/tables/TaskPriority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TaskService/src/main/java/org/darksamus86/taskservice/infrastructure/persistence/entities/tables/TaskStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TaskService/src/main/java/org/darksamus86/taskservice/infrastructure/persistence/repository/TaskRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TaskService/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TaskService/src/main/resources/application-examp.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TaskService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/darksamus86/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/darksamus86/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/darksamus86/gateway/GatewayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/darksamus86/gateway/GatewayApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TaskService/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../settings.gradle.kts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "DarkSamus86"
+  }
+}]]></component>
+  <component name="GitLabMergeRequestFiltersHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPENED",
+    "assignee": {
+      "type": "org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue",
+      "username": "darksamus",
+      "fullname": "Daniil Lobanov"
+    }
+  }
+}]]></component>
+  <component name="GitLabMergeRequestsSettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "first": "https://gitlab.robotov.studio/darksamus/taskflow.git",
+    "second": "8849be29-bf9a-42e4-8576-e8416ab52e56"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/DarkSamus86/TaskFlow.git",
+    "accountId": "f6f7ca9c-ca4a-43fd-b74a-2580478b0257"
+  }
+}]]></component>
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="C:\Users\kepka\.gradle\wrapper\dists\gradle-9.2.1-bin\2t0n5ozlw9xmuyvbp7dnzaxug\gradle-9.2.1" javaHome="C:\Program Files\Java\jdk-21" gradleVersion="9.2.1" />
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="37KxmtueAvR4O89rleaXv04Mnu6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "mvp/implement-db",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Gateway" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Gateway" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.138" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.29346.138" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ba576c6-6068-4b18-9c05-ca40d018ce97" name="Changes" comment="" />
+      <created>1766665728468</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766665728468</updated>
+      <workItem from="1766665729594" duration="97000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
 </project>
