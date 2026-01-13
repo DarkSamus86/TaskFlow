@@ -9,8 +9,7 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "tasks")
 @Data
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Builder
+@NoArgsConstructor
 @AllArgsConstructor
 public class TaskEntity {
     @Id
