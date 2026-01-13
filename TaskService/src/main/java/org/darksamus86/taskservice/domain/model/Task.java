@@ -12,8 +12,9 @@ import lombok.Setter;
 @Setter
 public class Task {
     private TaskId taskId;
+    private TaskTitle taskTitle;
+    private TaskMessage message;
     private TaskPriority taskPriority;
     private TaskStatus taskStatus;
-    private TaskMessage message;
     
 }

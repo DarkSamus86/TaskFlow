@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
 
-public interface JpaTaskStatusRepo extends JpaRepository<TaskStatusEntity, Long> {
+public interface JpaTaskStatusRepo extends JpaRepository<TaskStatusEntity, Integer> {
     @Override
-    Optional<TaskStatusEntity> findById(Long id);
+    Optional<TaskStatusEntity> findById(Integer id);
 }

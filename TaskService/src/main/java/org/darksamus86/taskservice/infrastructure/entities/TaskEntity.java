@@ -19,12 +19,18 @@ public class TaskEntity {
     @Column(name = "title",length = 50, nullable = false)
     private String title;
 
+    @NotNull
     @Column(name="message", length = 4000, nullable = false)
     private String message;
 
-    @NotNull
-    @Column(name = "user_id", nullable = false)
+    // TODO: Когда реализую сервис аутентификации верну notnull и nullable
+    @Column(name = "user_id")
     private Long userId;
+
+    @NotNull
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "priority_id", nullable = false)
+    private TaskPriorityEntity priorityId;
 
     @NotNull
     @OneToOne(fetch = FetchType.LAZY)
