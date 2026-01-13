@@ -2,12 +2,17 @@ package org.darksamus86.taskservice.infrastructure.entities;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "tasks")
-public class Task {
+@Data
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@Builder
+@AllArgsConstructor
+public class TaskEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -15,8 +20,8 @@ public class Task {
     @Column(name = "title",length = 50, nullable = false)
     private String title;
 
-    @Column(name="description", length = 4000, nullable = false)
-    private String description;
+    @Column(name="message", length = 4000, nullable = false)
+    private String message;
 
     @NotNull
     @Column(name = "user_id", nullable = false)
@@ -25,7 +30,7 @@ public class Task {
     @NotNull
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "status_id", nullable = false)
-    private TaskStatus statusId;
+    private TaskStatusEntity statusId;
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;

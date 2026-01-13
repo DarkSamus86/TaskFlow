@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "task_history")
-public class TaskHistory {
+public class TaskHistoryEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -15,7 +15,7 @@ public class TaskHistory {
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "task_id", nullable = false)
-    private Task taskId;
+    private TaskEntity taskId;
 
     @NotNull
     @Column(name = "changed_by", nullable = false)
