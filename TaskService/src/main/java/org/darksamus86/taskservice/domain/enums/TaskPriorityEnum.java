@@ -4,11 +4,12 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 public enum TaskPriorityEnum {
-    LOW(1),
-    MEDIUM(2),
-    HIGH(3);
+    LOW(1, "Низкий"),
+    MEDIUM(2, "Средний"),
+    HIGH(3, "Высокий");
 
     private final int id;
+    private final String description;
 
     public static TaskPriorityEnum fromId(int id) {
         for (TaskPriorityEnum priorityEnum: values()) {
