@@ -22,8 +22,8 @@ public class TaskMapper {
           new TaskId(entity.getId()),
           new TaskTitle(entity.getTitle()),
           new TaskMessage(entity.getMessage()),
-          new TaskPriority(entity.getPriorityId().getId(), TaskPriorityEnum.fromId(entity.getPriorityId().getId()).name()),
-          new TaskStatus(entity.getStatusId().getId(), TaskStatusEnum.fromId(entity.getStatusId().getId()).name())
+          new TaskPriority(entity.getPriorityId().getId()),
+          new TaskStatus(entity.getStatusId().getId())
         );
     }
 

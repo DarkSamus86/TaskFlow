@@ -8,5 +8,4 @@ import org.darksamus86.taskservice.domain.enums.TaskStatusEnum;
 @AllArgsConstructor
 public class TaskStatus {
     private int taskStatusId;
-    private String taskStatusName;
 }

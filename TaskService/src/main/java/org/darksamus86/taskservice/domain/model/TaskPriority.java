@@ -7,5 +7,4 @@ import lombok.Data;
 @AllArgsConstructor
 public class TaskPriority {
     private int priorityId;
-    private final String namePriority;
 }

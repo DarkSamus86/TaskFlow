@@ -8,6 +8,8 @@ import org.darksamus86.taskservice.infrastructure.entities.TaskEntity;
 import org.darksamus86.taskservice.infrastructure.jpa_repo.JpaTaskPriorityRepo;
 import org.darksamus86.taskservice.infrastructure.jpa_repo.JpaTaskRepo;
 import org.darksamus86.taskservice.infrastructure.jpa_repo.JpaTaskStatusRepo;
+import org.darksamus86.taskservice.presentation.dto.request.CreateTaskRequest;
+import org.darksamus86.taskservice.presentation.dto.response.CreateTaskResponse;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
@@ -20,7 +22,11 @@ public class TaskRepoImpl implements TaskRepo {
     private final JpaTaskStatusRepo statusRepo;
     private final JpaTaskPriorityRepo priorityRepo;
 
-    public TaskRepoImpl(JpaTaskRepo jpaTaskRepo, TaskMapper mapper, JpaTaskStatusRepo statusRepo, JpaTaskPriorityRepo priorityRepo) {
+    public TaskRepoImpl(JpaTaskRepo jpaTaskRepo,
+                        TaskMapper mapper,
+                        JpaTaskStatusRepo statusRepo,
+                        JpaTaskPriorityRepo priorityRepo
+    ) {
         this.jpaTaskRepo = jpaTaskRepo;
         this.mapper = mapper;
         this.statusRepo = statusRepo;
@@ -28,13 +34,24 @@ public class TaskRepoImpl implements TaskRepo {
     }
 
     @Override
-    public void save(Task task) {
+    public TaskId save(Task task) {
         TaskEntity entity = mapper.toEntity(task, statusRepo, priorityRepo);
-        jpaTaskRepo.save(entity);
+        TaskEntity saved = jpaTaskRepo.saveAndFlush(entity);
+
+        Long id = saved.getId();
+
+        return new TaskId(id);
+    }
+
+    @Override
+    public CreateTaskResponse createTask(CreateTaskRequest req) {
+        return null;
     }
 
     @Override
     public Optional<Task> findById(TaskId taskId) {
-        return Optional.empty();
+        return jpaTaskRepo
+                .findById(taskId.getId())
+                .map(mapper::toDomain);
     }
 }
