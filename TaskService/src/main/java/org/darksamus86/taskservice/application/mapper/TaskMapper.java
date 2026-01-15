@@ -43,7 +43,10 @@ public class TaskMapper {
                 ));
 
         TaskEntity entity = new TaskEntity();
-        entity.setId(domain.getTaskId().getId());
+        if (domain.getTaskId() != null) {
+            entity.setId(domain.getTaskId().getId());
+        }
+
         entity.setTitle(domain.getTaskTitle().getTitle());
         entity.setMessage(domain.getMessage().getMessage());
         entity.setPriorityId(priorityEntity);

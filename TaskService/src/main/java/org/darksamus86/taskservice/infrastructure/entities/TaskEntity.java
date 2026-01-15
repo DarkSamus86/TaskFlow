@@ -28,12 +28,12 @@ public class TaskEntity {
     private Long userId;
 
     @NotNull
-    @OneToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "priority_id", nullable = false)
     private TaskPriorityEntity priorityId;
 
     @NotNull
-    @OneToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "status_id", nullable = false)
     private TaskStatusEntity statusId;
 

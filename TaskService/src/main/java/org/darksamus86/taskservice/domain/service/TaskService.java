@@ -1,10 +1,11 @@
 package org.darksamus86.taskservice.domain.service;
 
 import lombok.extern.slf4j.Slf4j;
-import org.darksamus86.taskservice.application.mapper.TaskMapper;
 import org.darksamus86.taskservice.domain.model.Task;
 import org.darksamus86.taskservice.domain.model.TaskId;
 import org.darksamus86.taskservice.domain.repo.TaskRepo;
+import org.darksamus86.taskservice.presentation.dto.request.CreateTaskRequest;
+import org.darksamus86.taskservice.presentation.dto.response.CreateTaskResponse;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -13,15 +14,13 @@ import java.util.Optional;
 @Service
 public class TaskService {
     private final TaskRepo taskRepo;
-    private final TaskMapper mapper;
 
-    public TaskService(TaskRepo taskRepo, TaskMapper mapper) {
+    public TaskService(TaskRepo taskRepo) {
         this.taskRepo = taskRepo;
-        this.mapper = mapper;
     }
 
-    public TaskId save(Task task) {
-        return taskRepo.save(task);
+    public TaskId createTask(Task task) {
+        return taskRepo.createTask(task);
     }
 
     public Optional<Task> findById(TaskId id) {
