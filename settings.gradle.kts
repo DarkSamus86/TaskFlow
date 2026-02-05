@@ -1,6 +1,6 @@
 rootProject.name = "TaskFlow"
 
-include("AuthService", "TaskService", "Gateway")
+include("AuthService", "TaskService", "Gateway", "NotificationService")
 
 dependencyResolutionManagement {
     versionCatalogs {
